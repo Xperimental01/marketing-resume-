@@ -1,0 +1,133 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Sidebar */
+.box {
+  flex: 1 1 300px;
+  background-color: rgb(247, 242, 242);
+  padding: 20px;
+  min-width: 260px;
+}
+
+#profilepic {
+  height: 200px;
+  width: 170px;
+  clip-path: circle(85px);
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.box h2, .box h3 {
+  margin-top: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.box p, .box .text {
+  margin-bottom: 10px;
+}
+
+.box2 {
+  margin-top: 20px;
+}
+
+.box2 p {
+  background-color: rgb(207, 207, 207);
+  border-radius: 2px;
+  padding: 5px;
+}
+
+/* Main Section */
+.box3 {
+  flex: 3 1 600px;
+  padding: 20px;
+  background-color: white;
+  min-width: 300px;
+}
+
+#title {
+  color: black;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.box4 h2 {
+  color: brown;
+  margin-bottom: 10px;
+}
+
+.email, .contact {
+  background-color: rgb(255, 200, 200);
+  padding: 5px 10px;
+  margin: 10px 5px 0 0;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+.dotted-line {
+  border-top: 3px dotted #ccc;
+  margin: 20px 0;
+}
+
+.box5 h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.E2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.E2 img {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+}
+
+.E2 h4 {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .box, .box3 {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .email {
+    margin-left: 0;
+    display: block;
+  }
+
+  .contact {
+    margin-top: 10px;
+  }
+}
